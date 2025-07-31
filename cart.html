@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<title>Checkout page</title>
+</head>
+<body>
+<h1>Checkout</h1>
+<hr>
+<form>
+<h2><b>Customer Details</b></h2>
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" placeholder="Enter your name" name="name" required><br><br>
+<label for="email">Email:</label><br>
+<input type ="email" id="email" placeholder="Enter your Email Address" name="email" required><br><br>
+<label for="phone">Phone no:</label><br>
+<input type="number" id="phone" placeholder="Enter your Phone Number" name="phone" required><br><br>
+<label for="address">Address:</label><br>
+<textarea id="address" placeholder="Enter your Address" name="address" rows="3" cols="40" required></textarea><br><br>
+<label>Delivery Method:</label><br>
+<input type="radio" name="delivery" value="Standard" checked> Standard
+<input type="radio" name="delivery" value="Express"> Express<br><br>
+<label for="date">Delivery Date:</label><br>
+<input type="date" id="date" name="date" required><br><br>
+<h2><b>Product Details</b></h2>
+<label for="name">Product Name:</label><br>
+<input type="text" id="name" placeholder="Enter your Product Name" name="name" required><br><br>
+<label for="quantity">Quantity:</label><br>
+<input type="number" id="quantity" name="quantity" required><br><br>
+<label for="price">Price:</label><br>
+<input type="number" id="price" name="price" required><br><br>
+<h2><b>Payment Details</b></h2>
+<label for="card">Card Number:</label><br>
+<input type="text" id="card" name="card" pattern="[0-9]{16}" required><br><br>
+<label for="quantity">Quantity:</label><br>
+<input type="number" id="quantity" name="quantity" min="1" max="10" value="1"><br><br>
+<label for="payment">Payment Method:</label><br>
+<select id="payment" name="payment" required>
+<option value="">--Select--</option>
+<option value="credit">Credit Card</option>
+<option value="debit">Debit Card</option>
+<option value="upi">UPI</option>
+<option value="cod">Cash on Delivery</option>
+</select><br><br>
+<div algin ="center">
+<input type="submit" value="Place Order">
+<input type="reset" value="Clear">
+</div>
+</form>
+</body>
+<footer>
+<a href="shopping.html">Back to Home</a>
+<center><p>© 2025 MegaMart Shopping System | All rights reserverd</p></center>
+</footer>
+</html>
